@@ -4,7 +4,8 @@
         "airbnb"
     ],
     "globals": {
-        "__DEV__": false
+        "__DEV__": false,
+        "window": false
     },
     "rules": {
         "no-confusing-arrow": ["error", {"allowParens": true}],

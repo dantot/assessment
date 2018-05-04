@@ -1,0 +1,8 @@
+.gradle/
+app/app.iml
+app/build/
+build/
+iosgithub.iml
+local.properties
+app/src/main/assets
+app/*.keystore

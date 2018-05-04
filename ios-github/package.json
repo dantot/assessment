@@ -3,18 +3,24 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "react-native start",
+    "start": "react-native start --reset-cache",
     "android": "react-native run-android",
+    "android:build": " cd android && ./gradlew assembleRelease",
     "ios": "react-native run-ios",
     "test": "jest",
-    "lint": "eslint ./*.js"
+    "lint": "eslint ./src && eslint ./index.js"
   },
   "jest": {
     "preset": "react-native"
   },
   "dependencies": {
+    "prop-types": "^15.6.1",
     "react": "16.3.1",
-    "react-native": "~0.55.2"
+    "react-native": "~0.55.2",
+    "react-native-navigation": "^1.1.457",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-thunk": "^2.2.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
