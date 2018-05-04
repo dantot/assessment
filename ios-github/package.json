@@ -8,12 +8,14 @@
     "android:build": " cd android && ./gradlew assembleRelease",
     "ios": "react-native run-ios",
     "test": "jest",
-    "lint": "eslint ./src && eslint ./index.js"
+    "lint": "eslint ./src && eslint ./index.js",
+    "reset": "rm -Rf node_modules android/build android/app/build android/app/src/main/assets && yarn cache clean -f && yarn install && react-native link && cd android && ./gradlew clean"
   },
   "jest": {
     "preset": "react-native"
   },
   "dependencies": {
+    "moment": "^2.22.1",
     "prop-types": "^15.6.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",

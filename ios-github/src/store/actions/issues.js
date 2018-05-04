@@ -22,7 +22,6 @@ export const getIssues = () => {
       })
       .then(parsedRes => {
         const issues = [];
-        console.log(parsedRes);
         for (const issue of parsedRes) {
           issues.push({
             ...issue

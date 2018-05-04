@@ -8,7 +8,7 @@ registerScreens(configureStore(), Provider);
 
 Navigation.startSingleScreenApp({
   screen: {
-    screen: 'iosgithub.Issues',
+    screen: 'iosgithub.IssueList',
     title: 'Issues'
   }
 });
