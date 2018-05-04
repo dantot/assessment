@@ -5,7 +5,8 @@
     ],
     "globals": {
         "__DEV__": false,
-        "window": false
+        "window": false,
+        "fetch": false
     },
     "rules": {
         "no-confusing-arrow": ["error", {"allowParens": true}],
